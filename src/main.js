@@ -13,7 +13,6 @@ import 'bootstrap/dist/js/bootstrap.min'
 //import components
 import PostsIndex from './components/posts/Index'
 import PostsCreate from './components/posts/Create'
-import PostsEdit from './components/posts/Edit'
 
 Vue.config.productionTip = false
 
@@ -28,11 +27,6 @@ const router = new VueRouter({
       path: '/create',
       name: 'create',
       component: PostsCreate
-    },
-    {
-      path: '/edit/:id',
-      name: 'edit',
-      component: PostsEdit
     }
   ],
   mode: 'history'
